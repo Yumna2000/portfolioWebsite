@@ -1,0 +1,64 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100%;
+}
+
+/* Flexbox Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #73bbee;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* About Me Section */
+section h2 {
+    color: #f7c3e0;
+    margin-bottom: 10px;
+}
+
+section img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #73bbee;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* List Styling */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
