@@ -17,7 +17,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #73bbee;
+    background-color: #a9d0ec;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -31,7 +31,7 @@ main {
 
 /* About Me Section */
 section h2 {
-    color: #f7c3e0;
+    color: #1013dc;
     margin-bottom: 10px;
 }
 
@@ -45,7 +45,7 @@ section img {
 
 /* Footer Styling */
 footer {
-    background-color: #73bbee;
+    background-color: #a9d0ec;
     color: white;
     text-align: center;
     padding: 10px 0;
