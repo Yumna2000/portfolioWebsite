@@ -3,33 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Youmna Al Chalati | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script defer src="theme-toggle.js"></script>
 </head>
 <body>
 
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <div class="container header-content">
+            <h1>Youmna Al Chalati</h1>
+            <button id="theme-toggle">Toggle Theme</button>
+        </div>
     </header>
 
     <main>
-        <section>
-            <h2>About Me</h2>
-            <img src="images/me.jpeg" alt="A photo of Youmna Al Chalati">
-            <p>Hello! My name is Youmna Al Chalati. I am a software engineer, building applications. This portfolio showcases my journey and projects.</p>
+        <!-- About Me -->
+        <section class="about container">
+            <div class="about-image">
+                <img src="images/me.jpeg" alt="Youmna's profile photo">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>Hey! I'm Youmna, a software engineer passionate about turning ideas into practical tech solutions. I love building things that solve real-world problems and help people. Welcome to my digital space!</p>
+            </div>
         </section>
 
-        <section>
-            <h2>My Skills</h2>
-            <p>I am currently learning the following skills:</p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>C++</li>
-                <li>3D modeling</li>
-            </ul>
+        <!-- Skills -->
+        <section class="skills container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
+                <div class="skill-card">Java</div>
+                <div class="skill-card">C++</div>
+                <div class="skill-card">3D Modeling</div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">Police Verification System</div>
+                <div class="project-card">Parking Car Sensor</div>
+                <div class="project-card">RFID Door Lock</div>
+            </div>
         </section>
     </main>
 
