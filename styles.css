@@ -63,7 +63,6 @@ header {
     background-color: #005b99;
 }
 
-/* About Section */
 .about {
     display: flex;
     flex-wrap: wrap;
@@ -90,8 +89,7 @@ header {
     color: var(--accent-color);
 }
 
-/* Skills Section */
-.skills h2, .projects h2 {
+.skills h2, .projects h2, .contact h2 {
     margin-bottom: 20px;
     color: var(--accent-color);
     text-align: center;
@@ -117,7 +115,17 @@ header {
     transform: translateY(-5px);
 }
 
-/* Footer */
+.project-card a {
+    display: block;
+    margin-top: 8px;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
 footer {
     background-color: var(--header-bg);
     text-align: center;
