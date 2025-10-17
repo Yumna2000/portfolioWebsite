@@ -1,85 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Youmna Al Chalati | Portfolio</title>
-    <link rel="stylesheet" href="styles.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
-    <script defer src="theme-toggle.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Youmna Al Chalati | Portfolio</title>
+
+  <!-- System font stack for an Apple-like feel -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="theme-toggle.js"></script>
 </head>
 <body>
-
-<header>
+  <!-- Top Nav -->
+  <header class="site-header">
     <div class="container header-content">
-        <h1>Youmna Al Chalati</h1>
-        <button id="theme-toggle">Toggle Theme</button>
+      <a class="brand" href="#hero">Youmna Al Chalati</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-label="Toggle dark mode">⌘ Theme</button>
+      </nav>
     </div>
-</header>
+  </header>
 
-<main>
-    <!-- About Me -->
-    <section class="about container">
-        <div class="about-image">
-            <img src="images/me.jpeg" alt="Youmna's profile photo">
+  <!-- Hero -->
+  <section id="hero" class="hero container">
+    <div class="hero-text">
+      <h1>Building clear, human-centric tech.</h1>
+      <p>
+        I’m Youmna — a software engineer who turns ideas into polished, usable
+        products. I love designing elegant interfaces and robust systems that
+        solve real problems.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-ghost" href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="images/me.jpeg" alt="Youmna's profile photo">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about container card">
+    <div class="about-grid">
+      <div>
+        <h2>About Me</h2>
+        <p>
+          Hey! I'm Youmna, a software engineer passionate about turning ideas
+          into practical tech solutions. I focus on clean code, accessible
+          design, and thoughtful problem-solving.
+        </p>
+      </div>
+      <div class="about-badges">
+        <div class="badge">User-focused</div>
+        <div class="badge">Detail-oriented</div>
+        <div class="badge">Collaborative</div>
+        <div class="badge">Curious</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills container">
+    <h2>Skills</h2>
+    <div class="pill-grid">
+      <span class="pill">HTML</span>
+      <span class="pill">CSS</span>
+      <span class="pill">JavaScript</span>
+      <span class="pill">Java</span>
+      <span class="pill">C++</span>
+      <span class="pill">3D Modeling</span>
+      <span class="pill">Math</span>
+      <span class="pill">Processing</span>
+      <span class="pill">Hardware</span>
+      <span class="pill">Circuits</span>
+      <span class="pill">Creative Thinking</span>
+      <span class="pill">Teamwork</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects container">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+
+      <!-- NEW: Smart Garden 2.0 -->
+      <article class="project-card">
+        <div class="project-media">
+          <img src="images/smart-garden.jpg" alt="Smart Garden 2.0 project thumbnail">
         </div>
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>Hey! I'm Youmna, a software engineer passionate about turning ideas into practical tech solutions. I love building things that solve real-world problems and help people. Welcome to my digital space!</p>
+        <div class="project-body">
+          <h3>Smart Garden 2.0 – Automated Plant Watering System</h3>
+          <p>
+            An Arduino-based system that reads soil moisture, drives a water
+            pump via a relay, and shows live status on an LCD. Designed for
+            reliability (separate power domains, flyback protection) and easy
+            maintenance.
+          </p>
+          <div class="project-actions">
+            <!-- Replace the link below with your real video if different -->
+            <a class="btn btn-primary" href="https://youtu.be/v9qIN_Lfh1Y?si=A097nprm_BLGiijN" target="_blank" rel="noopener">YouTube Video</a>
+            <!-- Optionally add a GitHub link later -->
+            <!-- <a class="btn btn-ghost" href="https://github.com/yourname/smart-garden-2" target="_blank" rel="noopener">GitHub</a> -->
+          </div>
         </div>
-    </section>
+      </article>
 
-    <!-- Skills -->
-    <section class="skills container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">HTML</div>
-            <div class="skill-card">CSS</div>
-            <div class="skill-card">JavaScript</div>
-            <div class="skill-card">Java</div>
-            <div class="skill-card">C++</div>
-            <div class="skill-card">3D Modeling</div>
-            <div class="skill-card">Math</div>
-            <div class="skill-card">Processing</div>
-            <div class="skill-card">Hardware Skills</div>
-            <div class="skill-card">Circuits</div>
-            <div class="skill-card">Outside-the-box Thinking</div>
-            <div class="skill-card">Teamwork</div>
+      <!-- Police Verification -->
+      <article class="project-card">
+        <div class="project-media">
+          <img src="images/police-verification.jpg" alt="Police Verification System">
         </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="projects container">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <p>Police Verification System</p>
-                <a href="https://github.com/Yumna2000/Police-Verification" target="_blank">View on GitHub</a>
-            </div>
-            <div class="project-card">
-                <p>Parking Car Sensor</p>
-            </div>
-            <div class="project-card">
-                <p>RFID Door Lock</p>
-                <a href="https://youtu.be/lQvBswPAMrQ" target="_blank">Watch on YouTube</a>
-            </div>
-            <div class="project-card">
-                <p>Plant Watering System</p>
-                <a href="https://youtu.be/VIqTqQ_gz7I" target="_blank">Watch on YouTube</a>
-            </div>
+        <div class="project-body">
+          <h3>Police Verification System</h3>
+          <p>Data entry and validation flow to streamline verification steps.</p>
+          <div class="project-actions">
+            <a class="btn btn-ghost" href="https://github.com/Yumna2000/Police-Verification" target="_blank" rel="noopener">GitHub</a>
+          </div>
         </div>
-    </section>
+      </article>
 
-    <!-- Contact -->
-    <section class="contact container">
-        <h2>Contact</h2>
-        <p>You can find me on <a href="https://www.linkedin.com/in/youmna-al-chalati-9ba28434b" target="_blank">LinkedIn</a>.</p>
-    </section>
-</main>
+      <!-- Parking Car Sensor -->
+      <article class="project-card">
+        <div class="project-media">
+          <img src="images/parking-sensor.jpg" alt="Parking Car Sensor">
+        </div>
+        <div class="project-body">
+          <h3>Parking Car Sensor</h3>
+          <p>Ultrasonic distance sensing with visual feedback for safe parking.</p>
+        </div>
+      </article>
 
-<footer>
-    <p>&copy; 2025 Youmna Al Chalati. All Rights Reserved.</p>
-</footer>
+      <!-- RFID Door Lock -->
+      <article class="project-card">
+        <div class="project-media">
+          <img src="images/rfid-lock.jpg" alt="RFID Door Lock">
+        </div>
+        <div class="project-body">
+          <h3>RFID Door Lock</h3>
+          <p>Secure access control using RFID cards and a microcontroller.</p>
+          <div class="project-actions">
+            <a class="btn btn-ghost" href="https://youtu.be/lQvBswPAMrQ" target="_blank" rel="noopener">YouTube</a>
+          </div>
+        </div>
+      </article>
 
+      <!-- Plant Watering System (original) -->
+      <article class="project-card">
+        <div class="project-media">
+          <img src="images/plant-watering.jpg" alt="Plant Watering System">
+        </div>
+        <div class="project-body">
+          <h3>Plant Watering System</h3>
+          <p>Moisture-based automatic irrigation — the earlier version.</p>
+          <div class="project-actions">
+            <a class="btn btn-ghost" href="https://youtu.be/VIqTqQ_gz7I" target="_blank" rel="noopener">YouTube</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact container card">
+    <h2>Contact</h2>
+    <p>
+      Reach me on
+      <a href="https://www.linkedin.com/in/youmna-al-chalati-9ba28434b" target="_blank" rel="noopener">LinkedIn</a>.
+    </p>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Youmna Al Chalati</p>
+    </div>
+  </footer>
 </body>
 </html>
