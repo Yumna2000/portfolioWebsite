@@ -168,3 +168,33 @@ body{
   .hero{ grid-template-columns: 1fr; }
   .about-grid{ grid-template-columns: 1fr; }
 }
+/* Full-bleed Contact section */
+.contact{
+  width: 100%;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 64px 0;          /* taller, “section” feel */
+  border-radius: 0;         /* remove rounded corners */
+  box-shadow: none;         /* no card shadow */
+  margin: 48px 0 0 0;       /* space before footer */
+}
+
+.contact .container{
+  text-align: center;
+}
+
+.site-footer{
+  margin-top: 0;            /* keep footer tight under contact */
+}
+/* Center hero text vertically relative to the image */
+.hero{
+  align-items: center;      /* vertical centering in the grid */
+  min-height: 60vh;         /* gives it some height so centering is visible */
+}
+
+/* Optional: ensure the portrait doesn’t shrink oddly */
+.hero-art img{
+  max-height: 520px;        /* adjust if needed */
+  object-fit: cover;
+}
