@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,11 +11,11 @@
   <link rel="stylesheet" href="styles.css" />
   <script defer src="theme-toggle.js"></script>
 </head>
+
 <body class="dark">
   <!-- Top Nav -->
   <header class="site-header">
     <div class="container header-content">
-      <a class="brand" href="#hero">Youmna Al Chalati</a>
       <nav class="nav">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -28,16 +29,8 @@
   <!-- Hero -->
   <section id="hero" class="hero container">
     <div class="hero-text">
-      <h1>Building clear, human-centric tech.</h1>
-      <p>
-        I’m Youmna — a software engineer who turns ideas into polished, usable
-        products. I love designing elegant interfaces and robust systems that
-        solve real problems.
-      </p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="#projects">View Projects</a>
-        <a class="btn btn-ghost" href="#contact">Contact</a>
-      </div>
+      <h1>Youmna Al Chalati</h1>
+      <p>Software Engineer</p>
     </div>
     <div class="hero-art">
       <img src="images/me.jpeg" alt="Youmna's profile photo">
@@ -87,14 +80,10 @@
   <section id="projects" class="projects container">
     <h2>Projects</h2>
 
-    <div class="projects-grid">
+    <div class="projects-stack">
 
-      <!-- NEW: Smart Garden 2.0 -->
-      <article class="project-card">
-        <div class="project-media">
-          <img src="images/smart-garden.jpg" alt="Smart Garden 2.0 project thumbnail">
-        </div>
-        <div class="project-body">
+      <article class="project-feature">
+        <div class="project-feature__content">
           <h3>Smart Garden 2.0 – Automated Plant Watering System</h3>
           <p>
             An Arduino-based system that reads soil moisture, drives a water
@@ -102,90 +91,89 @@
             reliability (separate power domains, flyback protection) and easy
             maintenance.
           </p>
-          <div class="project-actions">
-            <!-- Replace the link below with your real video if different -->
-            <a class="btn btn-primary" href="https://youtu.be/v9qIN_Lfh1Y?si=A097nprm_BLGiijN" target="_blank" rel="noopener">YouTube Video</a>
-            <!-- Optionally add a GitHub link later -->
-            <!-- <a class="btn btn-ghost" href="https://github.com/yourname/smart-garden-2" target="_blank" rel="noopener">GitHub</a> -->
+          <div class="project-feature__actions">
+            <a class="btn btn-primary" href="https://youtu.be/v9qIN_Lfh1Y?si=A097nprm_BLGiijN" target="_blank"
+              rel="noopener">
+              YouTube Video
+            </a>
           </div>
+        </div>
+
+        <div class="project-feature__media">
+          <img src="images/smart-garden.jpg" alt="Smart Garden 2.0 project thumbnail" loading="lazy">
         </div>
       </article>
 
-      <!-- Police Verification -->
-      <article class="project-card">
-        <div class="project-media">
-          <img src="images/police-verification.jpg" alt="Police Verification System">
-        </div>
-        <div class="project-body">
+      <article class="project-feature project-feature--reverse">
+        <div class="project-feature__content">
           <h3>Police Verification System</h3>
           <p>Data entry and validation flow to streamline verification steps.</p>
-          <div class="project-actions">
-            <a class="btn btn-ghost" href="https://github.com/Yumna2000/Police-Verification" target="_blank" rel="noopener">GitHub</a>
+          <div class="project-feature__actions">
+            <a class="btn btn-ghost" href="https://github.com/Yumna2000/Police-Verification" target="_blank"
+              rel="noopener">GitHub</a>
           </div>
+        </div>
+        <div class="project-feature__media">
+          <img src="images/police-verification.jpg" alt="Police Verification System" loading="lazy">
         </div>
       </article>
 
-     <!-- Parking Car Sensor -->
-<article class="project-card">
-  <div class="project-media">
-    <img src="images/parking-sensor.jpg" alt="Parking Car Sensor">
-  </div>
-  <div class="project-body">
-    <h3>Parking Car Sensor</h3>
-    <p>
-      Ultrasonic distance sensing with visual feedback for safe parking.
-    </p>
-    <div class="project-actions">
-      <!-- 👇 Replace this link with your actual YouTube video URL -->
-      <a class="btn btn-primary" href="https://youtube.com/shorts/dwVw7NrGOhU?si=3wloL3bZH6ALSJjM" target="_blank" rel="noopener">
-        YouTube Video
-      </a>
-    </div>
-  </div>
-</article>
-
-
-      <!-- RFID Door Lock -->
-      <article class="project-card">
-        <div class="project-media">
-          <img src="images/rfid-lock.jpg" alt="RFID Door Lock">
+      <article class="project-feature">
+        <div class="project-feature__content">
+          <h3>Parking Car Sensor</h3>
+          <p>Ultrasonic distance sensing with visual feedback for safe parking.</p>
+          <div class="project-feature__actions">
+            <a class="btn btn-primary" href="https://youtube.com/shorts/dwVw7NrGOhU?si=3wloL3bZH6ALSJjM" target="_blank"
+              rel="noopener">
+              YouTube Video
+            </a>
+          </div>
         </div>
-        <div class="project-body">
+        <div class="project-feature__media">
+          <img src="images/parking-sensor.jpg" alt="Parking Car Sensor" loading="lazy">
+        </div>
+      </article>
+
+      <article class="project-feature project-feature--reverse">
+        <div class="project-feature__content">
           <h3>RFID Door Lock</h3>
           <p>Secure access control using RFID cards and a microcontroller.</p>
-          <div class="project-actions">
+          <div class="project-feature__actions">
             <a class="btn btn-ghost" href="https://youtu.be/lQvBswPAMrQ" target="_blank" rel="noopener">YouTube</a>
           </div>
         </div>
+        <div class="project-feature__media">
+          <img src="images/rfid-lock.jpg" alt="RFID Door Lock" loading="lazy">
+        </div>
       </article>
 
-      <!-- Plant Watering System (original) -->
-      <article class="project-card">
-        <div class="project-media">
-          <img src="images/plant-watering.jpg" alt="Plant Watering System">
-        </div>
-        <div class="project-body">
+      <article class="project-feature">
+        <div class="project-feature__content">
           <h3>Plant Watering System</h3>
           <p>Moisture-based automatic irrigation — the earlier version.</p>
-          <div class="project-actions">
+          <div class="project-feature__actions">
             <a class="btn btn-ghost" href="https://youtu.be/VIqTqQ_gz7I" target="_blank" rel="noopener">YouTube</a>
           </div>
+        </div>
+        <div class="project-feature__media">
+          <img src="images/plant-watering.jpg" alt="Plant Watering System" loading="lazy">
         </div>
       </article>
 
     </div>
   </section>
 
- <!-- Contact -->
-<section id="contact" class="contact">
-  <div class="container">
-    <h2>Contact</h2>
-    <p>
-      Reach me on
-      <a href="https://www.linkedin.com/in/youmna-al-chalati-9ba28434b" target="_blank" rel="noopener">LinkedIn</a>.
-    </p>
-  </div>
-</section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>
+        Reach me on
+        <a href="https://www.linkedin.com/in/youmna-al-chalati-9ba28434b" target="_blank" rel="noopener">LinkedIn</a>.
+      </p>
+    </div>
+  </section>
 
 
   <footer class="site-footer">
@@ -194,4 +182,5 @@
     </div>
   </footer>
 </body>
+
 </html>
